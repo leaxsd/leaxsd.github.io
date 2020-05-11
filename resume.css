@@ -36,14 +36,51 @@ a:hover {
 }
 
 .jumbotron{
+  padding: 40px;
   background-image: url(img/top_bg.png);
-  background-size: cover;
+  background-size: 320px 320px;
   background-repeat: no-repeat;
-/* color: white;
-background-color:  #d5ae41; */
+  background-position: left;
+  background-color:  #f2dfcd;
+  height: 320px;
+  /* background-attachment: fixed; */
 }
 
 .monospace {
   font-weight: bold;
   font-family: "Lucida Console", Courier, monospace;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  h5 {
+    font-size: 45px;
+  }
+  toptext {
+    font-size: 1.0em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h5 {
+    font-size: 32px;
+  }
+  toptext {
+    font-size: 0px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  li {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
 }

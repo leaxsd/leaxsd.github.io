@@ -46,7 +46,7 @@
       <!-- ########################################################################## -->
       <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
 
-        <a href="#"> <span class="navbar-brand"> Alex Duarte </span> </a>
+        <!-- <a href="#"> <span class="navbar-brand"> Alex Duarte </span> </a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +55,10 @@
 
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link js-scroll-trigger" href="#about"> About <span class="sr-only">(current)</span></a>
+              <a class="nav-link js-scroll-trigger" href="#"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills"> Skills </a>
@@ -75,14 +78,14 @@
           </ul>
         </div>
 
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">  <a href="https://www.linkedin.com/in/alexphys/"> <i class="fab fa-linkedin fa-2x"> </i> </a> </li>
-          <li class="nav-item">  <a href="https://github.com/leaxp"> <i class="fab fa-github-square fa-2x"> </i> </a> </li>
-          <li class="nav-item">  <a href="https://twitter.com/alexsodu"> <i class="fab fa-twitter-square fa-2x"> </i> </a> </li>
-        </ul>
+        <a href="https://www.linkedin.com/in/alexphys/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/leaxp"><i class="fab fa-github-square fa-2x"></i></a>
+        <a href="https://twitter.com/alexsodu"><i class="fab fa-twitter-square fa-2x"></i></a>
 
-        <span class="bg-white text-dark ml-3">&nbsp; <i class="fas fa-terminal"></i> </span>
-        <span class="bg-white text-dark mr-3">&nbsp; <b> leax.fis@gmail.com </b> &nbsp;</span>
+        <span class="bg-white text-dark ml-3"> &nbsp; <a class="text-dark" href="mailto:leax.fis@gmail.com" alt="email"> <i class="fas fa-terminal"></i> <b> <toptext> leax.fis@gmail.com </toptext> </b> </a> &nbsp;</span>
+
+        <!-- <span class="bg-white text-dark ml-3">&nbsp; <i class="fas fa-terminal"></i> </span>
+        <span class="bg-white text-dark mr-3">&nbsp; <b> leax.fis@gmail.com </b> &nbsp;</span> -->
       </nav>
 
       <main role="main">
@@ -95,54 +98,30 @@
             <div class="row">
               <div class="col-md-4">
               </div>
-              <div class="col-md-8">
-                <h1 class="display-4 font-weight-normal mb-3"> Hi, I am <b class="font-weight-bold">Alex Duarte</b>.</h1>
-                <p class="text-justify mb-4">
-                  I am a  <b class="font-weight-bold">physicist</b>  and  <b class="font-weight-bold">AI scientist</b> with
-                  experience on experimental optical microscopy and deep learning computer vision. Nowadays based on Barcelona
-                  Spain, I have worked abroad over the past years passing for Germany and UK. My focus is develop machine
-                  learning algorithms allied with optical resources to tackle experimental challenges.
-                </p>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <a class="btn btn-outline-dark" href="#about" role="button">More Info &raquo;</a>
-                  </div>
-                  <div class="col-sm-4 align-items-end">
-                    <a class="btn btn-outline-dark" href="img/AD_resume_2020.pdf" download="AD_resume.pdf"><i class="fas fa-download"></i> Resume (pdf)</a>
-                  </div>
-                </div>
+              <div class="col-md-8 mb-4">
+                <h5 class="mb-3"> Hi, I am <b class="font-weight-bold">Alex Duarte</b>.</h5>
+                <toptext>
+                  I am a  <b class="font-weight-bold">physicist</b>  and  <b class="font-weight-bold">AI scientist</b> with experience on experimental optical microscopy and deep learning computer vision. Nowadays based on Barcelona Spain, I have worked abroad over the past years passing for Germany and UK. My focus is develop machine learning algorithms allied with optical resources to tackle experimental challenges.
+                </toptext>
               </div>
             </div>
-          </div>
-
-          <!-- <br>
-          <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
               </div>
               <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <a class="btn btn-outline-dark" href="#about" role="button">More Info &raquo;</a>
               </div>
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <div class="col">
+                <a class="btn btn-outline-dark" href="img/AD_resume_2020.pdf" download="AD_resume.pdf"><i class="fas fa-download"></i> Resume (pdf)</a>
               </div>
             </div>
           </div>
-          <hr> -->
-
         </div>
 
         <!-- ########################################################################## -->
                                           <!-- About -->
         <!-- ########################################################################## -->
-        <section class="p-5" id="about">
+        <section id="about">
           <div class="container-fluid p-3 bg-dark text-white mb-5">
             <h2 class="text-center">About Me</h2>
           </div>
@@ -186,7 +165,7 @@
         <!-- ########################################################################## -->
                                           <!-- Skills -->
         <!-- ########################################################################## -->
-        <section class="p-5" id="skills">
+        <section id="skills">
           <div class="container-fluid p-3 bg-dark text-white mb-5">
             <h2 class="text-center">Skills</h2>
           </div>
@@ -199,25 +178,25 @@
               <div class="col-md-5">
 
                 <div class="row align-items-center justify-content-end mb-4">
-                  Python
+                  <span>Python</span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 95%;">Advanced</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  C++
+                  <span> C++ </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 55%;">Intermadiate</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  LabView
+                  <span> LabView </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 90%;">Advanced</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  MatLab
+                  <span> MatLab </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 65%;">Intermadiate</div>
                     </div>
@@ -232,25 +211,25 @@
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 95%;">Advanced</div>
                     </div>
-                  HTML
+                  <span> HTML </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 80%;">Advanced</div>
                     </div>
-                  CSS
+                  <span> CSS </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 75%;">Intermediate</div>
                     </div>
-                  Flask
+                  <span> Flask </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-info" style="width: 45%;">Basic</div>
                     </div>
-                  Django
+                  <span> Django </span>
                 </div>
 
               </div>
@@ -263,13 +242,13 @@
               <div class="col-md-5">
 
                 <div class="row align-items-center justify-content-end mb-4">
-                  MySQL
+                  <span> MySQL </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-secondary" style="width: 80%;">Advanced</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  MongoDB
+                  <span> MongoDB </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-secondary" style="width: 55%;">Intermadiate</div>
                     </div>
@@ -284,13 +263,13 @@
                     <div class="progress w-50 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-secondary" style="width: 85%;">Advanced</div>
                     </div>
-                  Amazon Web Service
+                  <span> Amazon Web Service </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-50 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-secondary" style="width: 60%;">Intermadiate</div>
                     </div>
-                  Google Cloud Service
+                  <span> Google Cloud Service </span>
                 </div>
 
               </div>
@@ -304,19 +283,19 @@
               <div class="col-md-5">
 
                 <div class="row align-items-center justify-content-end mb-4">
-                  PyTorch
+                  <span> PyTorch </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 95%;">Advanced</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  TensorFlow
+                  <span> TensorFlow </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 75%;">Advanced</div>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-end mb-4">
-                  Numpy
+                  <span> Numpy </span>
                     <div class="progress w-75 ml-3 justify-content-end" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 95%;">Advanced</div>
                     </div>
@@ -331,19 +310,19 @@
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 95%;">Advanced</div>
                     </div>
-                  Scikit-Learn
+                  <span> Scikit-Learn </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 80%;">Advanced</div>
                     </div>
-                  Pandas
+                  <span> Pandas </span>
                 </div>
                 <div class="row align-items-center justify-content-start mb-4">
                     <div class="progress w-75 mr-3" style="height: 18px;">
                       <div class="progress-bar bg-success" style="width: 85%;">Advanced</div>
                     </div>
-                  OpenCV
+                  <span> OpenCV </span>
                 </div>
 
               </div>
@@ -377,7 +356,7 @@
           <!-- Optics -->
           <h2 class="text-center mt-4 mb-5"> Lab </h2>
 
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mb-5">
 
             <div class="col-md-5">
               <ul class="list-group list-group-flush">
@@ -404,7 +383,7 @@
                                           <!-- Experience -->
         <!-- ########################################################################## -->
 
-        <section class="p-5" id="experience">
+        <section id="experience">
           <div class="container-fluid p-3 bg-dark text-white mb-5">
             <h2 class="text-center">Experience</h2>
           </div>
@@ -412,11 +391,11 @@
           <!-- ICFO -->
           <div class="row">
             <div class="col-md-2 text-center">
-              <img src="img/experience/icfo.png" style="width:100%;">
+              <img class="img-responsive" src="img/experience/icfo.png" style="width:100%;">
             </div>
             <div class="col-md-7">
               <h3>ICFO - Institute of Photonic Sciences</h3>
-              <h5 class="text-secondary">Postdoctoral Researcher</h5>
+              <h4 class="text-secondary">Postdoctoral Researcher</h4>
             </div>
             <div class="col-md-3 text-right">
               <p class="text-secondary">2016 - Present</p>
@@ -424,7 +403,7 @@
             </div>
           </div>
 
-          <div class="row ml-3 mb-4">
+          <div class="row mb-4">
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a class="text-link" href="https://www.icfo.eu/lang/research/groups/groups-details?group_id=24"> Molecular Nanophotonics Group </a>- Prof. Niek van Hulst</li>
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Deep Learning single molecule localization</li>
@@ -433,14 +412,16 @@
             </ul>
           </div>
 
+          <hr>
+
           <!-- Oxford -->
           <div class="row">
             <div class="col-md-2 text-center">
-              <img src="img/experience/oxford.png" style="width:90%;">
+              <img class="img-responsive" src="img/experience/oxford.png" style="width:90%;">
             </div>
             <div class="col-md-7">
               <h3>Oxford University</h3>
-              <h5 class="text-secondary">Postdoctoral Research Associate</h5>
+              <h4 class="text-secondary">Postdoctoral Research Associate</h4>
             </div>
             <div class="col-md-3 text-right">
               <p class="text-secondary">2014 - 2016</p>
@@ -448,7 +429,7 @@
             </div>
           </div>
 
-          <div class="row ml-3 mt-3">
+          <div class="row mt-3">
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a class="text-link" href="http://kukura.chem.ox.ac.uk/home"> Kukura lab </a>- Prof. Phillip Kukura</li>
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Wide-field Microscopy</li>
@@ -462,7 +443,7 @@
         <!-- ########################################################################## -->
                                           <!-- Education -->
         <!-- ########################################################################## -->
-        <section class="p-5" id="education">
+        <section id="education">
           <div class="container-fluid p-3 bg-dark text-white mb-5">
             <h2 class="text-center">Education</h2>
           </div>
@@ -470,11 +451,11 @@
           <!-- Heidelberg -->
           <div class="row">
             <div class="col-md-2 text-center">
-              <img src="img/education/heidelberg.png" style="width:90%;">
+              <img class="img-responsive" src="img/education/heidelberg.png" style="width:90%;">
             </div>
             <div class="col-md-7">
               <h3>Heidelberg University</h3>
-              <h5 class="text-secondary">PhD in Physics (Exchange Program)</h5>
+              <h4 class="text-secondary">PhD in Physics (Exchange Program)</h4>
             </div>
             <div class="col-md-3 text-right">
               <p class="text-secondary">2011 - 2013</p>
@@ -482,7 +463,7 @@
             </div>
           </div>
 
-          <div class="row ml-3 mt-3 mb-4">
+          <div class="row mt-3 mb-4">
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a class="text-link" href="https://www.uni-heidelberg.de/fakultaeten/chemgeo/pci/motzkus/"> Motzkus Group </a>- Prof. Marcus Motzkus</li>
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Vibrational Microscopy</li>
@@ -491,14 +472,16 @@
             </ul>
           </div>
 
+          <hr>
+
           <!-- UFRGS -->
           <div class="row">
             <div class="col-md-2 text-center">
-              <img src="img/education/ufrgs.gif" style="width:90%;">
+              <img class="img-responsive" src="img/education/ufrgs.gif" style="width:90%;">
             </div>
             <div class="col-md-7">
               <h3> UFRGS Federal University</h3>
-              <h5 class="text-secondary">M.SC. and PhD in Physics</h5>
+              <h4 class="text-secondary">M.SC. and PhD in Physics</h4>
             </div>
             <div class="col-md-3 text-right">
               <p class="text-secondary">2009 - 2014</p>
@@ -506,7 +489,7 @@
             </div>
           </div>
 
-          <div class="row ml-3 mt-3">
+          <div class="row mt-3 mb-4">
             <ul class="fa-ul">
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a class="text-link" href="https://lume.ufrgs.br/handle/10183/90315"> PhD Thesis </a>- Multiplex CARS applied to carbon nanotubes and brain tissues </li>
               <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Laboratory Instrumentation</li>
@@ -519,14 +502,14 @@
         <!-- ########################################################################## -->
                                           <!-- Projects -->
         <!-- ########################################################################## -->
-        <section class="p-5" id="projects">
+        <section id="projects">
           <div class="container-fluid p-3 bg-dark text-white mb-5">
             <h2 class="text-center">Projects</h2>
           </div>
           <!-- Deep learning localization STORM -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2020 <i class="fas fa-code-branch fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2020 <i class="fas fa-code-branch fa-lg p-3"></i> </span><span> </span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">Deep Learning Localization Super-Resolutiom Microscopy </span> (ICFO, ES)
@@ -535,8 +518,8 @@
           </div>
           <!-- IMC -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2019 <i class="fas fa-code-branch fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2019 <i class="fas fa-code-branch fa-lg p-3"></i></span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">IMC cells segmentation </span> (Ai.Vali, CA)
@@ -545,8 +528,8 @@
           </div>
           <!-- Endoscopy -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2019 <i class="fas fa-code-branch fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2019 <i class="fas fa-code-branch fa-lg p-3"></i></span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">Endoscopy Image Classification </span> (Ai.Vali, CA)
@@ -555,8 +538,8 @@
           </div>
           <!-- Properties Price -->
           <div class="row align-items-center mb-4">
-            <div class="col-md-2 text-right">
-              2017 <i class="fas fa-code-branch fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2017 <i class="fas fa-code-branch fa-lg p-3"></i></span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">Properties Price Prediction </span> (SharpestMinds, CA)
@@ -566,8 +549,8 @@
 
           <!-- FFT Raman -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2016 <i class="fas fa-microscope fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2016 <i class="fas fa-microscope fa-lg p-3"></i></span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">Wide-Field Detected Fourier Transform CARS Microscopy </span> (Oxford, UK)
@@ -576,8 +559,8 @@
           </div>
           <!-- sub 10 fs -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2016 <i class="fas fa-microscope fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2016 <i class="fas fa-microscope fa-lg p-3"></i></span>
             </div>
             <div class="col-md-8">
               <span class="font-weight-bold">Sub-10 fs Time-Resolved Vibronic Optical Microscopy </span> (Oxford, UK)
@@ -586,8 +569,8 @@
           </div>
           <!-- Retinal Schiff base -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2015 <i class="fas fa-eye fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2015 <i class="fas fa-eye fa-lg p-3"></i></span>
             </div>
             <div class="col-md-10">
               <span class="font-weight-bold">Barrierless Photoisomerization of 11-cis Retinal Protonated Schiff Base in Solution </span> (Oxford, UK)
@@ -596,8 +579,8 @@
           </div>
           <!-- Lignocellulosic CARS -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2014 <i class="fas fa-tree fa-lg ml-1 mr-1 p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2014 <i class="fas fa-tree fa-lg ml-1 mr-1 p-3"></i></span>
             </div>
             <div class="col-md-10">
               <span class="font-weight-bold">Chemical imaging of lignocellulosic biomass by CARS microscopy </span> (Heidelberg, DE)
@@ -606,8 +589,8 @@
           </div>
           <!-- Nanotubes CARS -->
           <div class="row align-items-center">
-            <div class="col-md-2 text-right">
-              2013 <i class="fas fa-microscope fa-lg p-3"></i>
+            <div class="col-md-2 text-left">
+              <span> 2013 <i class="fas fa-microscope fa-lg p-3"></i></span>
             </div>
             <div class="col-md-10">
               <span class="font-weight-bold">Mapping impurity of single-walled carbon nanotubes in bulk samples with multiplex coherent anti-stokes Raman microscopy </span> (Heidelberg, DE)
@@ -618,7 +601,7 @@
 
         </section>
 
-        </div> <!-- /container -->
+        </div>
 
       </main>
 
@@ -629,7 +612,7 @@
             <p>&copy; Alex Soares Duarte - 2020</p>
           </div>
           <div class="col text-right">
-            <span class="text-dark mr-2"><i class="far fa-envelope"></i></span><a class="text-dark" href="mailto:leax.fis@gmail.com">leax.fis@gmail.com</a>
+            <span class="text-dark mr-2"><i class="far fa-envelope"></i></span><a class="text-dark" href="mailto:leax.fis@gmail.com"><span> leax.fis@gmail.com </span></a>
           </div>
         </div>
       </footer>
