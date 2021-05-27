@@ -1,6 +1,6 @@
-# leaxp.github.io
+# leaxsd.github.io
 My personal website.
 
-[leaxp.github.io](https://leaxp.github.io/)
+[leaxsd.github.io](https://leaxsd.github.io/)
 
 ;)
