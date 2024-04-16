@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head><script src="./assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -10,13 +8,14 @@
     <title>Alex Soares Duarte</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
 
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
     
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       body {
@@ -74,185 +73,111 @@
         -webkit-overflow-scrolling: touch;
       }
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-
       .filmaker {
+        font-size: calc(1.4rem + 2vw);
         font-family:monospace;
         color:rgb(174, 204, 240)
       }
-      .title {
+      .head-title {
+        font-size: calc(1rem + 0.5vw);
         font-family:monospace;
-        color:rgb(197, 194, 194)
       }
-      .text-maya {
+      .head-mail {
+        font-size: calc(0.5rem + 0.5vw);
+        font-family:monospace;
+      }
+      .box-title {
+        font-size: calc(1.5rem + 1vw);
+        font-family:monospace;
+        color:rgb(197, 194, 194);
+      }
+      .box-text {
         font-family:monospace;
         color:rgb(147, 147, 147)
       }
     </style>
 
-    
   </head>
-  <body data-bs-theme="dark">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+  <body data-bs-theme="dark">    
+  <main data-bs-theme="dark">
+    <div class="container py-4">
+      
+      <header class="mb-4 border-bottom justify-content-between d-flex flex-column flex-sm-row head-title">
 
-    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggles">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (dark)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div> -->
+          <a href="https://leaxsd.com" class="d-flex justify-content-between link-body-emphasis text-decoration-none">
+            <i class="bi bi-film h2 me-3"></i>
 
-    
-<main data-bs-theme="dark">
-  <div class="container py-4">
-    
-    <header class="mb-4 border-bottom justify-content-between d-flex flex-column flex-sm-row title">
-
-        <a href="https://leaxsd.com" class="d-flex justify-content-between text-body-emphasis text-decoration-none">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32"  class="me-2" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-            <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
-          </svg>
-  
-          <span class="fs-4">Alex Soares Duarte</span>
-        </a>
-        
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-body-emphasis text-decoration-none" href="mailto:leaxsd@gmail.com">
-              <span class="fs-6"> leaxsd@gmail.com </span>
-            </a>
-          </li>
-          <li class="ms-3"><a class="link-body-emphasis" href="mailto:leaxsd@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-            </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/leax.sd/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-          </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.vimeo.com/leaxsd/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-vimeo" viewBox="0 0 16 16">
-              <path d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z"/>
-            </svg></a></li>
-        </ul>
-        
-    </header>
-    
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3" style="
-      background-image: url(./img/alex.jpg);
-      height: 430px;
-      /* background-size: 100% ; */
-      background-position: center;
-      background-repeat: no-repeat;
-      ">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold filmaker">Film maker</h1>
-        <p class="col-md-8 fs-4 filmaker">.</p>
+            <span>Alex Soares Duarte</span>
+          </a>
+          
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis text-decoration-none" href="mailto:leaxsd@gmail.com">
+                <span class="head-mail"> leaxsd@gmail.com </span>
+              </a>
+            </li>
+            <li class="ms-3"><a class="link-body-emphasis" href="mailto:leaxsd@gmail.com">
+              <i class="bi bi-envelope h2"></i>
+            </a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/leax.sd/">
+              <i class="bi bi-instagram h2"></i>
+            </a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.vimeo.com/leaxsd/">
+              <i class="bi bi-vimeo h2"></i>
+            </a></li>
+          </ul>
+          
+      </header>
+      
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3" style="
+        background-image: url(./img/alex.jpg);
+        height: 430px;
+        /* background-size: 100% ; */
+        background-position: center;
+        background-repeat: no-repeat;
+        ">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold filmaker">Film maker</h1>
+          <p class="col-md-8 fs-4 filmaker">.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          
-          <h2 class="title">Maya Unsuited</h2>
-          
-          <p class="text-maya"> Short film - 2024</p>
-          
-          <p class="text-maya">
-            The hours preceding a meeting are full of catastrophic mind distortions taking Maya through an exhaustive mental journey, while she tries to fit into a society that doesn't suit her.
-          </p>
-       
-          <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            
+            <h2 class="box-title">Maya Unsuited</h2>
+            
+            <p class="box-text"> Short film - 2024</p>
+            
+            <p class="box-text">
+              The hours preceding a meeting are full of catastrophic mind distortions taking Maya through an exhaustive mental journey, while she tries to fit into a society that doesn't suit her.
+            </p>
+        
+            <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
+
+          </div>
+        </div>
+        <div class="col-md-6">
+
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/904922357?h=8c24223061&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
         </div>
       </div>
-      <div class="col-md-6">
 
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/904922357?h=8c24223061&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <footer class="d-flex pt-3 mt-4 text-body-secondary border-top justify-content-between">
+        <p class=" mb-5 d-flex">&copy; 2024</p>
+        <p class="mt-6 d-flex">
+        * cover by Christine Caviquiolo
+        </p>
 
-      </div>
+      </footer>
+    
+    
     </div>
 
-    <footer class="d-flex pt-3 mt-4 text-body-secondary border-top justify-content-between">
-      <p class=" mb-5 d-flex">&copy; 2024</p>
-      <p class="mt-6 d-flex">
-      * cover by Christine Caviquiolo
-      </p>
+  </main>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    </footer>
-  
-  
-  </div>
-
-</main>
-<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
+  </body>
 </html>
