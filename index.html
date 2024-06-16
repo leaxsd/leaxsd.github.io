@@ -96,9 +96,13 @@
     font-size: calc(1.5rem + 1vw);
     color: rgb(197, 194, 194);
   }
-
+  .box-subtitle {
+    font-size: calc(0.8rem + 0.3vw);
+    color: rgb(197, 194, 194);
+  }
   .box-text {
-    color: rgb(147, 147, 147)
+    font-size: calc(0.7rem + 0.3vw);
+    color: rgba(197, 194, 194, 0.7);
   }
   .filmmaker-small{
     margin-top:25%; 
@@ -129,30 +133,91 @@
 
       </header>
 
-      <!-- cover -->
-      <div class="p-5 mb-4 bg-body-tertiary rounded-3" style="
-        background-image: url(./img/alex.jpg);
-        background-color: transparent;
-        margin-bottom: 0;
-        height: 45vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        ">
+      
+      <div class="row align-items-md-stretch">
+
+        <!-- Harold -->
         
-        <div class="container-fluid py-5 d-none d-md-block">
-          <h2 class="fw-bold filmmaker">Film maker</h2>
+        <div class="col-md-6 mb-4">
+          
+          <div class="ratio ratio-16x9 p-5 bg-body-tertiary border rounded-3" style="
+          
+          background-image: url(./img/harold.jpeg);
+          
+          width: 50hw;
+          height: 75hw;
+          max-height: 100vh;
+          max-width: 133.33vh;
+
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          ">
+            <div class="mask border rounded-3" style="background-color: rgba(0, 0, 0, 0.55);">
+                
+                <h2 class="box-title" style="margin-left: 10%; margin-top: 12%; letter-spacing: 0.85rem;">
+                  Harold
+                </h2>
+
+                <p class="box-subtitle" style="margin-left: 10%; letter-spacing: 0.15rem;"> 
+                  Short film - 2024 
+                </p>
+
+                <p class="box-text" style="margin-left: 10%;">
+                  A bench tale to fill emptiness.
+                </p>
+                
+            </div>
+          </div>
+
         </div>
 
-        <div class="container-fluid d-block align-middle d-sm-none">
-          <h5 class="fw-bold filmmaker-small">Film <br>&nbsp;maker</h5>
+
+        <!-- Maya Unsuited -->
+        
+        <div class="col-md-6 mb-4">
+          
+          <div class="ratio ratio-16x9 p-5 bg-body-tertiary border rounded-3" style="
+          
+          background-image: url(./img/maya.jpeg);
+          
+          width: 50hw;
+          height: 75hw;
+          max-height: 100vh;
+          max-width: 133.33vh;
+
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          ">
+            <div class="mask border rounded-3" style="background-color: rgba(0, 0, 0, 0.55);">
+                
+                <h2 class="box-title" style="margin-left: 10%; margin-top: 12%; letter-spacing: 0.1rem;">
+                  Maya Unsuited
+                </h2>
+
+                <p class="box-subtitle" style="margin-left: 10%; letter-spacing: 0.15rem;"> 
+                  Short film - 202X 
+                </p>
+
+                <p class="box-text" style="margin-left: 10%; margin-right: 10%;">
+                  The hours preceding a meeting are full of catastrophic mind distortions taking Maya through an exhaustive
+                  mental journey, while she tries to fit into a society that doesn't suit her.
+                </p>
+                
+            </div>
+          </div>
+
         </div>
 
+
+      
       </div>
+
 
       <!-- Maya Unsuited -->
 
-      <div class="row align-items-md-stretch">
+      <!-- <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="h-100 p-5 bg-body-tertiary border rounded-3" style="
           background-image: url(./img/MU_cover.png);
@@ -173,29 +238,27 @@
               mental journey, while she tries to fit into a society that doesn't suit her.
             </p>
 
-            <!-- <a href="./maya_unsuited/index.html" class="btn btn-outline-secondary" type="button"> More </a> -->
-
           </div>
         </div>
-        
+         -->
         <!-- Video -->
 
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
 
           <div class="ratio ratio-16x9">
 
             <iframe src="https://player.vimeo.com/video/904922357?h=8c24223061&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; gyroscope; accelerometer" title="Bends of an Unquiet Mind"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             
           </div>
-      </div>
+        </div> -->
 
       <!-- Footer -->
       
       <footer class="d-flex pt-3 mt-4 text-body-secondary border-top justify-content-between">
         <p class=" mb-5 d-flex head-mail">&copy; 2024</p>
-        <p class="mb-5 d-flex head-mail">
+        <!-- <p class="mb-5 d-flex head-mail">
           * photo cover by Christine Caviquiolo
-        </p>
+        </p> -->
 
       </footer>
 
