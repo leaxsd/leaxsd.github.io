@@ -71,7 +71,7 @@ body {
 }
 
 .icon-gray {
-    filter: opacity(0.5) drop-shadow(0 0 0 rgb(229, 217, 137));
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(229, 217, 137))!important;
 }
 
 a.disabled {
