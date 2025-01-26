@@ -24,15 +24,19 @@
 
 <body data-bs-theme="dark">
   <main data-bs-theme="dark">
-    
+
     <div class="container py-4">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        <span class="navbar-toggler-icon fs-5"></span>
-      </button>  
-      
-      <a class="head-title align-middle fs-5 m-1"> Alex Soares Duarte </a>
-      
+      <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon fs-5"></span>
+        </button>  
+        
+        <a class="head-title align-middle fs-5 m-1"> Alex Soares Duarte </a>
+        
+      </div>
+
       <!-- off-canvas  -->
 
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="--bs-offcanvas-width: 12rem;">
@@ -99,7 +103,7 @@
             <span class="badge bg-warning text-dark">Short-length</span>
             <span class="badge bg-warning text-dark">8min</span>
 
-            <p class="lead montserrat mt-3">
+            <p class="montserrat mt-4">
               Harold is a public bench. He recalls meeting Ivan as a remarkable moment in his empty life. Would that be a fair narrative of his past?
             </p>
 
@@ -121,15 +125,55 @@
 
       <!-- <div class="b-divider mt-4"></div> -->
       
-      <footer class="footer-text d-flex mt-4 border-top justify-content-end">
+      <!-- Stills -->
+
+      <div class="container-fluid col-xxl-8 px-4 py-2" id="stills">
+
+        <a href="img/harold.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/harold.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Harold">
+        </a>
+
+        <a href="img/Ivan_01.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/Ivan_01.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Ivan">
+        </a>
+
+        <a href="img/flowers.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/flowers.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Flowers">
+        </a>
+
+        <a href="img/Ivan_02.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/Ivan_02.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Ivan">
+        </a>
+
+        <a href="img/jujo.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/jujo.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Julia & Joana">
+        </a>
+
+        <a href="img/jo.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/jo.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Joana">
+        </a>
+
+        <a href="img/ju.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/ju.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Julia">
+        </a>
+
+        <a href="img/jujo_go.jpg" target="_blank" style="text-decoration: none;">
+          <img src="img/jujo_go.jpg" class="rounded img-thumbnail" width="200" height="200" alt="Julia & Joana">
+        </a>
+
+     
+      </div>
+
+      <!-- End Stills -->
+
+      <footer class="footer-text d-flex mt-4 justify-content-end">
         <p class="montserrat mt-3 fs-6 fw-normal text-secondary"> &copy; 2025 Alex Soares Duarte </p>
       </footer>
 
     </div>
 
-  
-
   </main>
+
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
