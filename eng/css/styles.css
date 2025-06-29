@@ -1,0 +1,76 @@
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;  
+}
+
+.head-title {
+    font-family: "Comfortaa", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    vertical-align: bottom;
+    text-decoration: none;
+    color: rgb(197, 194, 194);
+}
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(197, 194, 194);
+}
+
+.roboto {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(197, 194, 194);
+}
+
+.offcanvas-header {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 1.2rem;
+    color: rgb(197, 194, 194);
+}
+
+.offcanvas-item {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(197, 194, 194);
+}
+
+.bi {
+    color: rgb(197, 194, 194)!important;
+}
+
+.poster-wide {
+    width: 405px;
+}
+
+.fixed-height {
+    max-height: 540px;
+}
+
+.b-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
