@@ -12,7 +12,9 @@
   <link rel="canonical" href="https://leaxsd.com/eng">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
@@ -26,113 +28,131 @@
 
   <div class="container col-lg-6 py-4">
 
-      <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
-        <a class="bi bi-arrow-up-right-square h4 me-3"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#about">About</a>
-            <a class="nav-item nav-link" href="#skills">Skills</a>
-            <a class="nav-item nav-link" href="#experience">Experience</a>
-            <a class="nav-item nav-link" href="#education">Education</a>
-          </div>
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
+      <a class="bi bi-arrow-up-right-square h4 me-3"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#about">About</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#experience">Experience</a>
+          <a class="nav-item nav-link" href="#education">Education</a>
         </div>
-        <a href="mailto:leaxsd@gmail.com" class="bi bi-envelope h4 me-3"></a>
+      </div>
+      <a href="" class="bi bi-envelope h4 me-3" target="_blank" onclick="copyEmail('leaxsd@gmail.com')"></button>
         <a href="https://www.linkedin.com/in/leaxsd/" class="bi bi-linkedin h4 me-3"></a>
-      </nav>
+    </nav>
 
-      <section id="about">
-        <div class="container py-4">
-          <div class="row justify-content-between">
-            <div class="col-7">
-              <h1 class="display-6 montserrat fw-normal">Alex Soares Duarte </h1>
-              <p class="montserrat text-muted"> PhD physicist &amp; Data Scientist </p>
-              <!-- <span class="badge bg-warning text-dark">Python</span> -->
-              <!-- <span class="badge bg-success text-dark">Care</span> -->
-              <span class="badge bg-warning text-dark">Image Processing</span>
-              <span class="badge bg-success text-dark">Communication</span>
-              <span class="badge bg-warning text-dark">Machine Learning</span>
-              <!-- <span class="badge bg-warning text-dark">Computer Vision</span> -->
-              <!-- <span class="badge bg-success text-dark">Self-motivated</span> -->
-              <span class="badge bg-warning text-dark">Metrology</span>
-              <span class="badge bg-success text-dark">Collaboration</span>
-              <span class="badge bg-warning text-dark">Data Analysis</span>
-            </div>
-            <div class="col align-content-center align-items-center">
-              <img src="img/alex.jpg" class="rounded-start-pill w-75">
-            </div>
+    <!-- About -->
+
+    <section id="about">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="display-6 montserrat fw-normal">Alex Soares Duarte </h1>
+            <p class="montserrat text-muted"> PhD physicist &amp; Data Scientist </p>
+            <span class="badge bg-warning text-dark">Image Processing</span>
+            <span class="badge bg-success text-dark">Communication</span>
+            <span class="badge bg-warning text-dark">Machine Learning</span>
+            <span class="badge bg-warning text-dark">Metrology</span>
+            <span class="badge bg-success text-dark">Collaboration</span>
+            <span class="badge bg-warning text-dark">Data Analysis</span>
+          </div>
+          <div class="col-6">
+            <img src="img/alex.jpg" class="rounded-start-pill w-auto">
           </div>
         </div>
+      </div>
 
-        <p class="montserrat mt-4">
-          I am a PhD physicist and Data Scientist with experience in experimental optics, deep learning and computer vision. I was born in the South of Brazil and moved to Europe in 2011, where I have been working in different countries; Germany (Heidelberg), UK (Oxford), Spain (Barcelona) and currently in The Netherlands (Eindhoven). My professional focus is solving technical challenges, applying physics knowledge and state-of-the-art computational tools, like machine learning and image processing.
-        </p>
+      <p class="montserrat mt-4">
+        I am a PhD physicist and Data Scientist with experience in experimental optics, deep learning and computer
+        vision. I was born in the South of Brazil and moved to Europe in 2011, where I have been working in different
+        countries; Germany (Heidelberg), UK (Oxford), Spain (Barcelona) and currently in The Netherlands (Eindhoven). My
+        professional focus is solving technical challenges, applying physics knowledge and state-of-the-art
+        computational tools, like machine learning and image processing.
+      </p>
 
-        <div class="d-inline-block align-content-center">
-          <a href="mailto:leaxsd@gmail.com" target="_blank" title="leaxsd@gmail.com"><button type="button" class="btn text-warning bi bi-envelope fs-2 btn-lg px-2"> </button></a>
-          <a href="https://www.linkedin.com/in/leaxsd/" target="_blank" title="@leaxsd"><button type="button" class="btn text-warning bi bi-linkedin h4 me-3 fs-2 btn-lg px-2"></button></a>
+      <div class="container">
+
+        <div class="row pb-0">
+          <a href="" class="text-decoration-none" title="leaxsd@gmail.com" onclick="copyEmail('leaxsd@gmail.com')">
+            <button type="button" class="btn text-warning bi bi-envelope fs-3 align-middle pb-0"></button>
+            <span class="text-warning fs-6 align-middle text-decoration-none pb-0">leaxsd@gmail.com</span>
+          </a>
         </div>
 
-      </section>
+        <div class="row pt-0">
+          <a href="https://www.linkedin.com/in/leaxsd/" target="_blank" class="text-decoration-none pt-0" title="@leaxsd">
+            <button type="button" class="btn text-warning bi bi-linkedin fs-3 align-middle pt-0"></button>
+            <span class="text-warning fs-6">@leaxsd</span>
+          </a>
+        </div>
 
-        <section id="skills">
-        <div class="container py-2">
-          <h4 class="montserrat fw-normal"> Skills </h4>
-          <div class="divider py-1 bg-warning"></div>
-          
-          <div class="container py-4 mt-2">
-            <div class="row">
-              <div class="col-4 align-content-center">
-                <h5 class="montserrat align-content-center fw-light"> Programing </h5>
-              </div>
-              <div class="col-8 align-content-center">
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Python</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MatLab</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">PyTorch</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">TensorFlow</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">OpenCV</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">LabView</button>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-4 align-content-center">
-                <h5 class="montserrat align-content-center fw-light"> Analisys &amp; Models </h5>
-              </div>
-              <div class="col-8 align-content-center">
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">PCA</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">t-SNE</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">U-Net</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Variational Autoencoders</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">GANs</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Graph-NN</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Difusion Models</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Object Detection</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Physics Informed NN</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MLP</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Reinforcement Learning</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Pandas</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Scikit-Learn</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Numpy</button>
-              </div>
-            </div>
+      </div>
 
-            <div class="row mt-4">
-              <div class="col-4 align-content-center">
-                <h5 class="montserrat align-content-center fw-light"> Databases </h5>
-              </div>
-              <div class="col-8 align-content-center">
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">JSON</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MySQL</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Amazon Web Service</button>
-                <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Google Could Service</button>
-              </div>
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+      <div class="container py-2 mt-4">
+        <h4 class="montserrat fw-normal"> Skills </h4>
+        <div class="divider py-1 bg-warning"></div>
+
+        <div class="container py-4 mt-2">
+          <div class="row">
+            <div class="col-4 align-content-center">
+              <p class="montserrat align-content-center text-center fs-5"> Programing </p>
             </div>
+            <div class="col-8 align-content-center">
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Python</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MatLab</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">PyTorch</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">TensorFlow</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">OpenCV</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">LabView</button>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-4 align-content-center">
+              <p class="montserrat align-content-center text-center fs-5"> Analisys &amp; Models </p>
+            </div>
+            <div class="col-8 align-content-center">
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">PCA</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">t-SNE</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">U-Net</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Variational Autoencoders</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">GANs</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Graph-NN</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Difusion Models</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Object Detection</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Physics Informed NN</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MLP</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Reinforcement Learning</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Pandas</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Scikit-Learn</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Numpy</button>
+            </div>
+          </div>
 
           <div class="row mt-4">
             <div class="col-4 align-content-center">
-              <h5 class="montserrat align-content-center fw-light"> Soft Skills </h5>
+              <p class="montserrat align-content-center text-center fs-5"> Databases </p>
+            </div>
+            <div class="col-8 align-content-center">
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">JSON</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">MySQL</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Amazon Web Service</button>
+              <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Google Could Service</button>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-4 align-content-center">
+              <p class="montserrat align-content-center text-center fs-5"> Soft Skills </p>
             </div>
             <div class="col-8 align-content-center">
               <button type="button" class="btn btn-outline-warning btn-sm mt-1 me-0">Communication</button>
@@ -146,147 +166,165 @@
             </div>
           </div>
 
-      </section>
+    </section>
 
-      <section id="experience">
-        <h4 class="montserrat fw-normal"> Experience </h4>
-        <div class="divider py-1 bg-warning"></div>
+    <!-- Experience -->
 
-        <div class="container py-4 mt-2">
-          
-          <!-- ASML -->
-          <div class="row">
+    <section id="experience">
+      <h4 class="montserrat fw-normal"> Experience </h4>
+      <div class="divider py-1 bg-warning"></div>
 
-            <div class="col-md-2 text-center align-content-center">
-              <img class="img-responsive" src="img/experience/asml.png" style="width:100%;">
-            </div>
-            <div class="col-md-7">
-              <h3 class="montserrat fw-medium ms-3"><a class="text-decoration-none" href="https://www.asml.com/en">ASML</a> <small class="text-secondary h5">The world's supplier to the <br>semiconductor industry</small></h3>
-              <h6 class="montserrat fw-medium text-warning ms-3">Data Scientist</h6>
-            </div>
-            <div class="col-md-3 text-right">
-              <p class="montserrat fw-normal">2020 - Present</p>
-              <p class="montserrat fw-normal">Veldhoven <br>The  Netherlands</p>
-            </div>
+      <div class="container py-4 mt-2">
 
-            <ul class="fa-ul mt-3">
-                <li class="montserrat fw-light">Overlay Metrology Inference</li>
-                <li class="montserrat fw-light">Difraction-Based Image Processing</li>
-                <li class="montserrat fw-light">Physics-Infromed Machine Learning</li>
-                <li class="montserrat fw-light">High-Voltage SEM simulations</li>
-                <li class="montserrat fw-light">Technical Competence Leader</li>
-            </ul>
+        <!-- ASML -->
+        <div class="row">
 
+          <div class="col-2 text-center align-content-center">
+            <img class="img-responsive w-100" src="img/experience/asml.png">
           </div>
-          <hr>
-
-          <!-- ICFO -->
-          <div class="row">
-
-            <div class="col-md-2 text-center align-content-center">
-              <img class="img-responsive" src="img/experience/icfo.png" style="width:100%;">
-            </div>
-            <div class="col-md-7">
-              <h3 class="montserrat fw-medium ms-3"><a class="text-decoration-none" href="https://www.icfo.eu/">ICFO</a> <small class="text-secondary h5">Institute of Photonic Sciences</small></h3>
-              <h6 class="montserrat fw-medium text-warning ms-3">Postdoctoral Researcher</h6>
-            </div>
-            <div class="col-md-3 text-right">
-              <p class="montserrat fw-normal">2016 - 2020</p>
-              <p class="montserrat fw-normal">Barcelona <br>Spain</p>
-            </div>
-
-            <ul class="fa-ul">
-              <li class="montserrat fw-light"><a class="text-link text-decoration-none" href="https://www.icfo.eu/lang/research/groups/groups-details?group_id=24"> Molecular Nanophotonics Group </a>- Prof. Niek van Hulst</li>
-              <li class="montserrat fw-light">Deep Learning single molecule localization</li>
-              <li class="montserrat fw-light">Single Molecule Fluorescence</li>
-              <li class="montserrat fw-light">Scanning Microscopy</li>
-            </ul>
-
+          <div class="col-7">
+            <h3 class="montserrat fw-medium ms-3"><a class="text-warning text-decoration-none"
+                href="https://www.asml.com/en">ASML</a> <small class="text-secondary h5">The world's supplier to the
+                <br>semiconductor industry</small></h3>
+            <h6 class="montserrat fw-medium text-warning ms-3">Data Scientist</h6>
           </div>
-          <hr>
-          
-          <!-- Oxford -->
-          <div class="row">
-
-            <div class="col-md-2 text-center align-content-center">
-              <img class="img-responsive" src="img/experience/oxford.png" style="width:100%;">
-            </div>
-            <div class="col-md-7">
-              <h3 class="montserrat fw-medium ms-3"><a class="text-decoration-none" href="https://www.ox.ac.uk/">Oxford</a> <small class="text-secondary h5">University</small></h3>
-              <h6 class="montserrat fw-medium text-warning ms-3">Postdoctoral Research Associate</h6>
-            </div>
-            <div class="col-md-3 text-right">
-              <p class="montserrat fw-normal">2014 - 2016</p>
-              <p class="montserrat fw-normal">Oxford <br>United Kingdon</p>
-            </div>
-
-            <ul class="fa-ul mt-4">
-              <li class="montserrat fw-light"><a class="text-link text-decoration-none" href="https://www.kukuralab.info/people"> Kukura lab </a>- Prof. Philipp Kukura</li>
-              <li class="montserrat fw-light">Wide-field Microscopy</li>
-              <li class="montserrat fw-light">Ultrafast Spectroscopy</li>
-              <li class="montserrat fw-light">Biomolecular Dynamics</li>
-            </ul>
-
+          <div class="col-3 text-start">
+            <p class="montserrat fw-light">2020 - <span class="text-warning">today</span></p>
+            <p class="montserrat fw-light">Veldhoven <br>The Netherlands</p>
           </div>
 
-      </section>
-
-      <section id="education">
-        <h4 class="montserrat fw-normal"> Education </h4>
-        <div class="divider py-1 bg-warning"></div>
-
-        <!-- Heidelberg -->
-        <div class="row mt-4">
-
-          <div class="col-md-2 text-center align-content-center">
-            <img class="img-responsive" src="img/experience/heidelberg.png" style="width:100%;">
-          </div>
-          <div class="col-md-7">
-            <h3 class="montserrat fw-medium ms-3"><a class="text-decoration-none" href="https://www.uni-heidelberg.de/en">Heidelberg</a> <small class="text-secondary h5">University</small></h3>
-            <h6 class="montserrat fw-medium text-warning ms-3">PhD Physics (Exchange)</h6>
-          </div>
-          <div class="col-md-3 text-right">
-            <p class="montserrat fw-normal">2011 - 2013</p>
-            <p class="montserrat fw-normal">Heidelberg <br>Germany</p>
-          </div>
-
-          <ul class="fa-ul mt-4">
-            <li class="montserrat fw-light"><a class="text-link text-decoration-none" href="https://www.uni-heidelberg.de/fakultaeten/chemgeo/pci/motzkus/"> Motzkus Group </a>- Prof. Marcus Motzkus</li>
-            <li class="montserrat fw-light">Vibrational Microscopy</li>
-            <li class="montserrat fw-light">Coherent Raman Spectroscopy</li>
-            <li class="montserrat fw-light">Tissues and Carbon Nanotubes Studies</li>
+          <ul class="fa-ul mt-3">
+            <li class="montserrat fw-light">Overlay Metrology Inference</li>
+            <li class="montserrat fw-light">Difraction-Based Image Processing</li>
+            <li class="montserrat fw-light">Physics-Infromed Machine Learning</li>
+            <li class="montserrat fw-light">High-Voltage SEM simulations</li>
+            <li class="montserrat fw-light">Technical Competence Leader</li>
           </ul>
 
         </div>
-
         <hr>
-        
-        <!-- UFRGS -->
-        <div class="row mt-4">
 
-          <div class="col-md-2 text-center align-content-center">
-            <img class="img-responsive" src="img/experience/ufrgs.png" style="width:100%;">
+        <!-- ICFO -->
+        <div class="row">
+
+          <div class="col-2 text-center align-content-center">
+            <img class="img-responsive w-100" src="img/experience/icfo.png">
           </div>
-          <div class="col-md-7">
-            <h3 class="montserrat fw-medium ms-3"><a class="text-decoration-none" href="https://www.ufrgs.br/site/english/ufrgs/">UFRGS</a> <small class="text-secondary h5">University</small></h3>
-            <h6 class="montserrat fw-medium text-warning ms-3">PhD Physics</h6>
+          <div class="col-7">
+            <h3 class="montserrat fw-medium ms-3"><a class="text-warning text-decoration-none" href="https://www.icfo.eu/">ICFO</a>
+              <small class="text-secondary h5">Institute of Photonic Sciences</small>
+            </h3>
+            <h6 class="montserrat fw-medium text-warning ms-3">Postdoctoral Researcher</h6>
           </div>
-          <div class="col-md-3 text-right">
-            <p class="montserrat fw-normal">2011 - 2013</p>
-            <p class="montserrat fw-normal">Heidelberg <br>Germany</p>
+          <div class="col-3 text-right">
+            <p class="montserrat fw-light">2016 - 2020</p>
+            <p class="montserrat fw-light">Barcelona <br>Spain</p>
+          </div>
+
+          <ul class="fa-ul">
+            <li class="montserrat fw-light"><a class="text-link text-decoration-none"
+                href="https://www.icfo.eu/lang/research/groups/groups-details?group_id=24"> Molecular Nanophotonics
+                Group </a>- Prof. Niek van Hulst</li>
+            <li class="montserrat fw-light">Deep Learning single molecule localization</li>
+            <li class="montserrat fw-light">Single Molecule Fluorescence</li>
+            <li class="montserrat fw-light">Scanning Microscopy</li>
+          </ul>
+
+        </div>
+        <hr>
+
+        <!-- Oxford -->
+        <div class="row">
+
+          <div class="col-2 text-center align-content-center">
+            <img class="img-responsive" src="img/experience/oxford.png" style="width:100%;">
+          </div>
+          <div class="col-7">
+            <h3 class="montserrat fw-medium ms-3"><a class="text-warning text-decoration-none"
+                href="https://www.ox.ac.uk/">Oxford</a> <small class="text-secondary h5">University</small></h3>
+            <h6 class="montserrat fw-medium text-warning ms-3">Postdoctoral Research Associate</h6>
+          </div>
+          <div class="col-3 text-right">
+            <p class="montserrat fw-light">2014 - 2016</p>
+            <p class="montserrat fw-light">Oxford <br>United Kingdon</p>
           </div>
 
           <ul class="fa-ul mt-4">
-            <li class="montserrat fw-light"><a class="text-link text-decoration-none" href="https://lume.ufrgs.br/handle/10183/90315"> PhD Thesis </a>- Multiplex CARS applied to carbon nanotubes and brain tissues</li>
-            <li class="montserrat fw-light">Laboratory Instrumentation</li>
-            <li class="montserrat fw-light">Physics and Optics Fundamentals</li>
+            <li class="montserrat fw-light"><a class="text-link text-decoration-none"
+                href="https://www.kukuralab.info/people"> Kukura lab </a>- Prof. Philipp Kukura</li>
+            <li class="montserrat fw-light">Wide-field Microscopy</li>
+            <li class="montserrat fw-light">Ultrafast Spectroscopy</li>
+            <li class="montserrat fw-light">Biomolecular Dynamics</li>
           </ul>
 
         </div>
 
+    </section>
 
-    </div>
-      
+    <section id="education">
+      <h4 class="montserrat fw-normal"> Education </h4>
+      <div class="divider py-1 bg-warning"></div>
+
+      <!-- Heidelberg -->
+      <div class="row mt-4">
+
+        <div class="col-2 text-center align-content-center">
+          <img class="img-responsive" src="img/experience/heidelberg.png" style="width:100%;">
+        </div>
+        <div class="col-7">
+          <h3 class="montserrat fw-medium ms-3"><a class="text-warning text-decoration-none"
+              href="https://www.uni-heidelberg.de/en">Heidelberg</a> <small class="text-secondary h5">University</small>
+          </h3>
+          <h6 class="montserrat fw-medium text-warning ms-3">PhD Physics (Exchange)</h6>
+        </div>
+        <div class="col-3 text-right">
+          <p class="montserrat fw-light">2011 - 2013</p>
+          <p class="montserrat fw-light">Heidelberg <br>Germany</p>
+        </div>
+
+        <ul class="fa-ul mt-4">
+          <li class="montserrat fw-light"><a class="text-link text-decoration-none"
+              href="https://www.uni-heidelberg.de/fakultaeten/chemgeo/pci/motzkus/"> Motzkus Group </a>- Prof. Marcus
+            Motzkus</li>
+          <li class="montserrat fw-light">Vibrational Microscopy</li>
+          <li class="montserrat fw-light">Coherent Raman Spectroscopy</li>
+          <li class="montserrat fw-light">Tissues and Carbon Nanotubes Studies</li>
+        </ul>
+
+      </div>
+
+      <hr>
+
+      <!-- UFRGS -->
+      <div class="row mt-4">
+
+        <div class="col-2 text-center align-content-center">
+          <img class="img-responsive" src="img/experience/ufrgs.png" style="width:100%;">
+        </div>
+        <div class="col-7">
+          <h3 class="montserrat fw-medium ms-3"><a class="text-warning text-decoration-none"
+              href="https://www.ufrgs.br/site/english/ufrgs/">UFRGS</a> <small
+              class="text-secondary h5">University</small></h3>
+          <h6 class="montserrat fw-medium text-warning ms-3">PhD Physics</h6>
+        </div>
+        <div class="col-3 text-right">
+          <p class="montserrat fw-light">2011 - 2013</p>
+          <p class="montserrat fw-light">Heidelberg <br>Germany</p>
+        </div>
+
+        <ul class="fa-ul mt-4">
+          <li class="montserrat fw-light"><a class="text-link text-decoration-none"
+              href="https://lume.ufrgs.br/handle/10183/90315"> PhD Thesis </a>- Multiplex CARS applied to carbon
+            nanotubes and brain tissues</li>
+          <li class="montserrat fw-light">Laboratory Instrumentation</li>
+          <li class="montserrat fw-light">Physics and Optics Fundamentals</li>
+        </ul>
+
+      </div>
+
+  </div>
+
+   <hr>
 
   <footer class="footer-text d-flex mt-4 justify-content-center">
     <p class="montserrat mt-3 fs-6 fw-normal text-secondary"> &copy; 2025 Alex Soares Duarte </p>
@@ -295,5 +333,14 @@
 </body>
 
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function copyEmail(email) {
+    navigator.clipboard.writeText(email).then(function () {
+      alert('Email address copied to clipboard');
+    }, function (err) {
+      console.error('Could not copy text: ', err);
+    });
+  }
+</script>
 
 </html>
